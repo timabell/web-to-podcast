@@ -9,3 +9,8 @@ fn main() {
     let mut writer = BufWriter::new(stdout.lock());
     say(message.as_bytes(), width, &mut writer).unwrap();
 }
+
+#[test]
+fn test_main() {
+    assert_eq!(2+2,5);
+}
